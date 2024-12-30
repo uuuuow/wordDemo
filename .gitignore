@@ -1,0 +1,12 @@
+.vs
+3rd
+VTMR/x64
+x64
+VTMR/log
+Win32
+lib
+methodlib/Debug
+methodlib/Release
+Bin
+VTMR/Release
+VtmrKeyGenerator/x64

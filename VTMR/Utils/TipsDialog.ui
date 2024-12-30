@@ -1,0 +1,23 @@
+<UI version="4.0" >
+ <class>CTipsDialog</class>
+ <widget class="QDialog" name="CTipsDialog" >
+  <property name="objectName" >
+   <string notr="true">CTipsDialog</string>
+  </property>
+  <property name="geometry" >
+   <rect>
+	<x>0</x>
+	<y>0</y>
+	<width>400</width>
+	<height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle" >
+   <string>CTipsDialog</string>
+  </property>
+ </widget>
+ <layoutDefault spacing="6" margin="11" />
+ <pixmapfunction></pixmapfunction>
+ <resources/>
+ <connections/>
+</UI>

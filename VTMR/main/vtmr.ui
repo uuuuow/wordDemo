@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VTMR</class>
+ <widget class="QMainWindow" name="VTMR">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>1080</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VTMR</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="../vtmr.qrc">
+    <normaloff>:/VTMR/images/VTMR/vtmr.ico</normaloff>:/VTMR/images/VTMR/vtmr.ico</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="actionNewProject"/>
+    <addaction name="actionOpenProject"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSaveAs"/>
+    <addaction name="actionCatalog"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuVideoAnalysis">
+    <property name="title">
+     <string>视频分析</string>
+    </property>
+    <addaction name="actionWaterMark"/>
+    <addaction name="actionCalibrationMethod"/>
+   </widget>
+   <widget class="QMenu" name="menuDataAnalysis">
+    <property name="title">
+     <string>数据分析</string>
+    </property>
+    <addaction name="actionFeatureTrackingCoordinates"/>
+    <addaction name="actionAbnormalPointDetection"/>
+   </widget>
+   <widget class="QMenu" name="menuRebuild">
+    <property name="title">
+     <string>重建结果</string>
+    </property>
+    <addaction name="actionTrace"/>
+    <addaction name="actionResultReport"/>
+    <addaction name="actionWordReport"/>
+   </widget>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>帮助</string>
+    </property>
+    <addaction name="actionAbout"/>
+   </widget>
+   <widget class="QMenu" name="menuOption">
+    <property name="title">
+     <string>选项</string>
+    </property>
+    <widget class="QMenu" name="menuFunctionSettings">
+     <property name="title">
+      <string>功能设置</string>
+     </property>
+     <addaction name="actionAppraiser"/>
+     <addaction name="actionWaterMarkParameters"/>
+     <addaction name="actionApplicableStandards"/>
+     <addaction name="actionWordReportStyle"/>
+    </widget>
+    <widget class="QMenu" name="menuGeneralSettings">
+     <property name="title">
+      <string>常规设置</string>
+     </property>
+     <addaction name="actionBackgroundColor"/>
+     <addaction name="actionNumberOfHistoricalProject"/>
+    </widget>
+    <addaction name="actionAccountSettings"/>
+    <addaction name="menuGeneralSettings"/>
+    <addaction name="menuFunctionSettings"/>
+   </widget>
+   <widget class="QMenu" name="menumenuImageAnalysis">
+    <property name="title">
+     <string>图像分析</string>
+    </property>
+    <widget class="QMenu" name="actionImageFormat">
+     <property name="title">
+      <string>图片格式</string>
+     </property>
+     <addaction name="actionOriginalSize"/>
+     <addaction name="actionFitToWindow"/>
+    </widget>
+    <widget class="QMenu" name="menuDistortionCorrection">
+     <property name="title">
+      <string>畸变矫正</string>
+     </property>
+     <addaction name="actionDistortionParameter"/>
+     <addaction name="actionCameraCalibration"/>
+    </widget>
+    <widget class="QMenu" name="menuFeatureSize">
+     <property name="title">
+      <string>特征尺寸</string>
+     </property>
+     <addaction name="actionLength"/>
+     <addaction name="actionCoordinate"/>
+    </widget>
+    <addaction name="actionImageFormat"/>
+    <addaction name="actionImageEnhance"/>
+    <addaction name="menuDistortionCorrection"/>
+    <addaction name="actionTimeInfo"/>
+    <addaction name="menuFeatureSize"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuVideoAnalysis"/>
+   <addaction name="menumenuImageAnalysis"/>
+   <addaction name="menuDataAnalysis"/>
+   <addaction name="menuRebuild"/>
+   <addaction name="menuOption"/>
+   <addaction name="menu"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNewProject">
+   <property name="text">
+    <string>新建工程</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </action>
+  <action name="actionPoint">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/bigpoint.png</normaloff>:/DrawTools/images/DrawTools/bigpoint.png</iconset>
+   </property>
+   <property name="text">
+    <string>点</string>
+   </property>
+   <property name="toolTip">
+    <string>点</string>
+   </property>
+  </action>
+  <action name="actionLine">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/xiantiao.png</normaloff>:/DrawTools/images/DrawTools/xiantiao.png</iconset>
+   </property>
+   <property name="text">
+    <string>线</string>
+   </property>
+   <property name="toolTip">
+    <string>线</string>
+   </property>
+  </action>
+  <action name="actionEllipse">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/tuoyuanxing.png</normaloff>:/DrawTools/images/DrawTools/tuoyuanxing.png</iconset>
+   </property>
+   <property name="text">
+    <string>圆</string>
+   </property>
+   <property name="toolTip">
+    <string>圆</string>
+   </property>
+  </action>
+  <action name="actionRectangle">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/fangkuang.png</normaloff>:/DrawTools/images/DrawTools/fangkuang.png</iconset>
+   </property>
+   <property name="text">
+    <string>矩形</string>
+   </property>
+   <property name="toolTip">
+    <string>矩形</string>
+   </property>
+  </action>
+  <action name="actionEraser">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/eraser.png</normaloff>:/DrawTools/images/DrawTools/eraser.png</iconset>
+   </property>
+   <property name="text">
+    <string>橡皮擦</string>
+   </property>
+   <property name="toolTip">
+    <string>橡皮擦</string>
+   </property>
+  </action>
+  <action name="actionDrivingTrace">
+   <property name="text">
+    <string>运行状态</string>
+   </property>
+  </action>
+  <action name="actionVelocity">
+   <property name="text">
+    <string>速度</string>
+   </property>
+  </action>
+  <action name="actionWordReport">
+   <property name="text">
+    <string>文书报告</string>
+   </property>
+  </action>
+  <action name="actionFeatureTrackingCoordinates">
+   <property name="text">
+    <string>特征跟踪坐标</string>
+   </property>
+  </action>
+  <action name="actionReference">
+   <property name="text">
+    <string>参照物的长度输入</string>
+   </property>
+  </action>
+  <action name="action1D">
+   <property name="text">
+    <string>一维线性距离输入</string>
+   </property>
+  </action>
+  <action name="action2D">
+   <property name="text">
+    <string>二维线性距离输入</string>
+   </property>
+  </action>
+  <action name="actionLength">
+   <property name="text">
+    <string>参照物长度输入</string>
+   </property>
+  </action>
+  <action name="actionCoordinate">
+   <property name="text">
+    <string>参照物坐标输入</string>
+   </property>
+  </action>
+  <action name="action_2D">
+   <property name="text">
+    <string>二维线性输入</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/undo.png</normaloff>:/DrawTools/images/DrawTools/undo.png</iconset>
+   </property>
+   <property name="text">
+    <string>撤销</string>
+   </property>
+   <property name="toolTip">
+    <string>撤销</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/redo.png</normaloff>:/DrawTools/images/DrawTools/redo.png</iconset>
+   </property>
+   <property name="text">
+    <string>重做</string>
+   </property>
+  </action>
+  <action name="actionVideoEQ">
+   <property name="text">
+    <string>图像增强</string>
+   </property>
+  </action>
+  <action name="actionCameraCalibration">
+   <property name="text">
+    <string>相机标定</string>
+   </property>
+  </action>
+  <action name="actionRuler">
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/chizi.png</normaloff>:/DrawTools/images/DrawTools/chizi.png</iconset>
+   </property>
+   <property name="text">
+    <string>尺子</string>
+   </property>
+   <property name="toolTip">
+    <string>尺子</string>
+   </property>
+  </action>
+  <action name="actionCatalog">
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/catalog.png</normaloff>:/DrawTools/images/DrawTools/catalog.png</iconset>
+   </property>
+   <property name="text">
+    <string>最近打开工程</string>
+   </property>
+   <property name="toolTip">
+    <string>工程目录</string>
+   </property>
+  </action>
+  <action name="actionTrace">
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/trace.png</normaloff>:/DrawTools/images/DrawTools/trace.png</iconset>
+   </property>
+   <property name="text">
+    <string>运行状态</string>
+   </property>
+   <property name="toolTip">
+    <string>运行状态</string>
+   </property>
+  </action>
+  <action name="actionFlowLog">
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/flow-log.png</normaloff>:/DrawTools/images/DrawTools/flow-log.png</iconset>
+   </property>
+   <property name="text">
+    <string>日志</string>
+   </property>
+   <property name="toolTip">
+    <string>日志</string>
+   </property>
+  </action>
+  <action name="actionPlayer">
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/player.png</normaloff>:/DrawTools/images/DrawTools/player.png</iconset>
+   </property>
+   <property name="text">
+    <string>播放器</string>
+   </property>
+   <property name="toolTip">
+    <string>播放器</string>
+   </property>
+  </action>
+  <action name="actionMagnifier">
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/Magnifier.png</normaloff>:/DrawTools/images/DrawTools/Magnifier.png</iconset>
+   </property>
+   <property name="text">
+    <string>放大镜</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;放大镜&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="actionImageEnhance">
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/ImageEnhance.png</normaloff>:/DrawTools/images/DrawTools/ImageEnhance.png</iconset>
+   </property>
+   <property name="text">
+    <string>图像增强</string>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;图像增强&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+  </action>
+  <action name="actionPartZoom">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="../vtmr.qrc">
+     <normaloff>:/DrawTools/images/DrawTools/PartZoom.png</normaloff>:/DrawTools/images/DrawTools/PartZoom.png</iconset>
+   </property>
+   <property name="text">
+    <string>局部缩放</string>
+   </property>
+   <property name="toolTip">
+    <string>局部缩放</string>
+   </property>
+  </action>
+  <action name="actionAppraiser">
+   <property name="text">
+    <string>录入鉴定主体信息</string>
+   </property>
+  </action>
+  <action name="actionTimeInfo">
+   <property name="text">
+    <string>时间信息</string>
+   </property>
+  </action>
+  <action name="actionAbout">
+   <property name="text">
+    <string>关于</string>
+   </property>
+  </action>
+  <action name="actionCalibrationMethod">
+   <property name="text">
+    <string>选择标定方式</string>
+   </property>
+  </action>
+  <action name="actionAccountSettings">
+   <property name="text">
+    <string>账户设置</string>
+   </property>
+  </action>
+  <action name="actionResultReport">
+   <property name="text">
+    <string>结果报表</string>
+   </property>
+  </action>
+  <action name="actionOriginalSize">
+   <property name="text">
+    <string>原始大小</string>
+   </property>
+  </action>
+  <action name="actionFitToWindow">
+   <property name="text">
+    <string>适合窗口</string>
+   </property>
+  </action>
+  <action name="actionImageEnhance_2">
+   <property name="text">
+    <string>图像增强</string>
+   </property>
+  </action>
+  <action name="actionDistortionParameter">
+   <property name="text">
+    <string>导入畸变参数</string>
+   </property>
+  </action>
+  <action name="actionWaterMark">
+   <property name="text">
+    <string>水印提取</string>
+   </property>
+  </action>
+  <action name="actionFeatureTracking">
+   <property name="text">
+    <string>特征跟踪</string>
+   </property>
+  </action>
+  <action name="actionOpenProject">
+   <property name="text">
+    <string>打开工程</string>
+   </property>
+  </action>
+  <action name="actionSaveAs">
+   <property name="text">
+    <string>另存为...</string>
+   </property>
+  </action>
+  <action name="action_17">
+   <property name="text">
+    <string>最近打开工程</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>退出</string>
+   </property>
+  </action>
+  <action name="actionBackgroundColor">
+   <property name="text">
+    <string>背景颜色</string>
+   </property>
+  </action>
+  <action name="actionNumberOfHistoricalProject">
+   <property name="text">
+    <string>历史文件显示数量</string>
+   </property>
+  </action>
+  <action name="actionWaterMarkParameters">
+   <property name="text">
+    <string>水印识别参数</string>
+   </property>
+  </action>
+  <action name="actionApplicableStandards">
+   <property name="text">
+    <string>使用标准情况</string>
+   </property>
+  </action>
+  <action name="actionWordReportStyle">
+   <property name="text">
+    <string>制作文书报告样式</string>
+   </property>
+  </action>
+  <action name="actionAbnormalPointDetection">
+   <property name="text">
+    <string>异常点检测</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="../vtmr.qrc"/>
+ </resources>
+ <connections/>
+</ui>

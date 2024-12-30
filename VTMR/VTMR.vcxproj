@@ -1,0 +1,395 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{B12702AD-ABFB-343A-A199-8E24837244A3}</ProjectGuid>
+    <Keyword>QtVS_v301</Keyword>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>VTMR</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(QtMsBuild)'=='' or !Exists('$(QtMsBuild)\qt.targets')">
+    <QtMsBuild>$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)Bin\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IntDir>$(SolutionDir)$(Platform)\$(Configuration)\</IntDir>
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)Bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <QtInstall>msvc2015</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="QtSettings">
+    <QtInstall>6.5.1_msvc2019_64</QtInstall>
+    <QtModules>core;gui;network;widgets;axcontainer;opengl;sql;charts</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Label="QtSettings" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <QtInstall>msvc2015</QtInstall>
+    <QtModules>core;gui;widgets</QtModules>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="QtSettings">
+    <QtInstall>6.5.1_msvc2019_64</QtInstall>
+    <QtModules>core;gui;network;widgets;axcontainer;opengl;sql;charts</QtModules>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\QtSql;./;3rd\opencv2413\include;3rd\qwt-6.1.4\include;MarkerPoint;Taken;Utils;PointsWidget;main;ProjectCatalog;ProjectWizard;DataBase;Trace;PointsManage;../methodlib;StartUp;VideoWidget;ListModel;3rd\SDL\include;.\Dedistortion;.\CameraCalibration;.\ImageEnhance;.\Ruler;.\Word;.\Player;.\OCRManage;.\TimeInfo;.\Wndtools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>QT_SQL_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>3rd\opencv2413\lib;3rd\ffmpeg-4.2.1-win32\lib;3rd\qwt-6.1.4\lib;$(SolutionDir)lib\$(Configuration)\;3rd\SDL\lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opencv_core2413d.lib;opencv_highgui2413d.lib;opencv_imgproc2413d.lib;opencv_calib3d2413d.lib;avformat.lib;avutil.lib;avcodec.lib;swscale.lib;swresample.lib;qwtd.lib;methodlib.lib;libsdl2d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\QtSql;./;..\3rd\ffmpeg421\include;..\3rd\opencv\opencv\build\include;..\3rd\qwt\include;MarkerPoint;Taken;Utils;PointsWidget;main;ProjectCatalog;ProjectWizard;Trace;PointsManage;../methodlib;StartUp;Player;ListModel;.\Dedistortion;.\CameraCalibration;..\3rd\EvKeyptTrack\include;.\ImageEnhance;Magnifier;.\Ruler;DataBase;KeyTrack;.\Word;Appraiser;..\3rd\PaddleOCR\include;.\OCRManage;.\TimeInfo;.\Wndtools;..\3rd\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>QT_SQL_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\3rd\opencv\opencv\build\x64\vc15\lib;..\3rd\openssl\lib;../3rd/ffmpeg421/lib;../3rd/qwt/x64;../3rd/x64/Debug;../3rd/EvKeyptTrack/x64/Debug;../3rd/PaddleOCR/lib</AdditionalLibraryDirectories>
+      <AdditionalDependencies>ws2_32.lib;libcrypto.lib;libssl.lib;opencv_world346d.lib;avcodec.lib;avformat.lib;avutil.lib;swscale.lib;swresample.lib;qwtd.lib;methodlib.lib;EvKeyptTrackDLLD.lib;PaddleOCR.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat />
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PreprocessorDefinitions>QT_SQL_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\QtSql;.\;DataBase;main;MarkerPoint;PointsManage;PointsWidget;ProjectCatalog;ProjectWizard;StartUp;Taken;Trace;Utils;VideoWidget;../methodlib;3rd\SDL\include;3rd\opencv2413\include;3rd\qwt-6.1.4\include;.\Dedistortion;.\CameraCalibration;.\ImageEnhance;.\Ruler;.\Word;.\Player;.\OCRManage;.\TimeInfo;.\Wndtools;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_core2413.lib;opencv_highgui2413.lib;opencv_imgproc2413.lib;opencv_calib3d2413.lib;avformat.lib;avutil.lib;avcodec.lib;swscale.lib;swresample.lib;qwt.lib;methodlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>3rd\opencv2413\lib;3rd\ffmpeg-4.2.1-win32\lib;3rd\qwt-6.1.4\lib;$(SolutionDir)lib\$(Configuration)\;3rd\SDL\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <PreprocessorDefinitions>QT_SQL_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(QTDIR)\include\QtSql;.\;main;MarkerPoint;PointsManage;PointsWidget;ProjectCatalog;ProjectWizard;StartUp;Taken;Trace;Utils;Player;../methodlib;..\3rd\opencv\opencv\build\include;..\3rd\ffmpeg421\include;..\3rd\qwt\include;.\Dedistortion;.\CameraCalibration;..\3rd\EvKeyptTrack\include;.\ImageEnhance;Magnifier;.\Ruler;DataBase;KeyTrack;.\Word;Appraiser;.\OCRManage;..\3rd\PaddleOCR\include;.\TimeInfo;.\Wndtools;..\3rd\openssl\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <OutputFile>$(OutDir)\$(ProjectName).exe</OutputFile>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;libcrypto.lib;libssl.lib;opencv_world346.lib;avcodec.lib;avformat.lib;avutil.lib;swscale.lib;swresample.lib;qwt.lib;methodlib.lib;EvKeyptTrackDLL.lib;PaddleOCR.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>..\3rd\opencv\opencv\build\x64\vc15\lib;..\3rd\openssl\lib;../3rd/ffmpeg421/lib;../3rd/qwt/x64;../3rd/x64/Release;../3rd/EvKeyptTrack/x64/Release;../3rd/PaddleOCR/lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main\TestWord.cpp" />
+    <ClCompile Include="Appraiser\AddAppraiserDialog.cpp" />
+    <ClCompile Include="Appraiser\AppraiserDialog.cpp" />
+    <ClCompile Include="Appraiser\AppraisalStandardDialog.cpp" />
+    <ClCompile Include="Appraiser\AppraiserTable.cpp" />
+    <ClCompile Include="Appraiser\PhotoDialog.cpp" />
+    <ClCompile Include="Appraiser\AppraisalStandardTable.cpp" />
+    <ClCompile Include="CameraCalibration\CameraCalibration.cpp" />
+    <ClCompile Include="DataBase\SerializeData.cpp" />
+    <ClCompile Include="CameraCalibration\Dedistortion.cpp" />
+    <ClCompile Include="DataBase\SQLManager.cpp" />
+    <ClCompile Include="ImageEnhance\ImageEnhance.cpp" />
+    <ClCompile Include="KeyTrack\KeyTrack.cpp" />
+    <ClCompile Include="Magnifier\Zoom.cpp" />
+    <ClCompile Include="Magnifier\Magnifier.cpp" />
+    <ClCompile Include="OCRManage\OCRThread.cpp" />
+    <ClCompile Include="Player\DecodeThread.cpp" />
+    <ClCompile Include="Player\PlayerWidget.cpp" />
+    <ClCompile Include="PointsManage\FixedCamReference.cpp" />
+    <ClCompile Include="PointsManage\TwoPoints.cpp" />
+    <ClCompile Include="PointsWidget\Coordinate2Points.cpp" />
+    <ClCompile Include="PointsWidget\Coordinate3Points.cpp" />
+    <ClCompile Include="PointsWidget\Coordinate4Points.cpp" />
+    <ClCompile Include="PointsWidget\Length2Coordinate.cpp" />
+    <ClCompile Include="PointsWidget\Length2Points.cpp" />
+    <ClCompile Include="PointsWidget\Length3Points.cpp" />
+    <ClCompile Include="PointsWidget\Length4Points.cpp" />
+    <ClCompile Include="PointsWidget\InputWidget.cpp" />
+    <ClCompile Include="PointsWidget\PointItem.cpp" />
+    <ClCompile Include="PointsWidget\InputDialog.cpp" />
+    <ClCompile Include="main\main.cpp" />
+    <ClCompile Include="main\vtmr.cpp" />
+    <ClCompile Include="PointsManage\FixedCam1D.cpp" />
+    <ClCompile Include="PointsManage\FixedCam2D.cpp" />
+    <ClCompile Include="PointsManage\MovingCam2DOneself.cpp" />
+    <ClCompile Include="PointsManage\MovingCamSpace.cpp" />
+    <ClCompile Include="PointsManage\MovingCam2DTargetVehicle.cpp" />
+    <ClCompile Include="PointsManage\PointsManage.cpp" />
+    <ClCompile Include="ProjectCatalog\ProjectItem.cpp" />
+    <ClCompile Include="ProjectCatalog\ProjectList.cpp" />
+    <ClCompile Include="ProjectWizard\AppraisalPage.cpp" />
+    <ClCompile Include="ProjectWizard\DateTimeDialog.cpp" />
+    <ClCompile Include="ProjectWizard\EntrustPage.cpp" />
+    <ClCompile Include="ProjectWizard\MeasuringMethodPage.cpp" />
+    <ClCompile Include="ProjectWizard\MeasuringMethodWnd.cpp" />
+    <ClCompile Include="ProjectWizard\ProjectInfoPage.cpp" />
+    <ClCompile Include="ProjectWizard\ProjectWizard.cpp" />
+    <ClCompile Include="ProjectWizard\AccidentPage.cpp" />
+    <ClCompile Include="Register\Register.cpp" />
+    <ClCompile Include="Ruler\Ruler.cpp" />
+    <ClCompile Include="Ruler\RulerWidget.cpp" />
+    <ClCompile Include="StartUp\ringsmapprogressbar.cpp" />
+    <ClCompile Include="StartUp\StartUpDialog.cpp">
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">%(Filename).moc</QtMocFileName>
+      <DynamicSource Condition="'$(Configuration)|$(Platform)'=='Release|x64'">input</DynamicSource>
+      <QtMocFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(Filename).moc</QtMocFileName>
+    </ClCompile>
+    <ClCompile Include="Taken\CustomScrollArea.cpp" />
+    <ClCompile Include="Taken\LogBrowser.cpp" />
+    <ClCompile Include="Taken\TakenBG.cpp" />
+    <ClCompile Include="Taken\TakenControl.cpp" />
+    <ClCompile Include="TimeInfo\P0Trace.cpp" />
+    <ClCompile Include="TimeInfo\TimeInfoWnd.cpp" />
+    <ClCompile Include="Trace\ShowTrace.cpp" />
+    <ClCompile Include="Player\DecodeVideo.cpp" />
+    <ClCompile Include="Taken\TakenWidget.cpp" />
+    <ClCompile Include="Trace\TraceWidget.cpp" />
+    <ClCompile Include="Utils\Command.cpp" />
+    <ClCompile Include="Utils\Log.cpp" />
+    <ClCompile Include="Utils\Global.cpp" />
+    <ClCompile Include="Utils\TipsDialog.cpp" />
+    <ClCompile Include="Utils\Utils.cpp" />
+    <ClCompile Include="Player\PlayerSlider.cpp" />
+    <ClCompile Include="Player\PlayerBG.cpp" />
+    <ClCompile Include="Utils\ReadIni.cpp" />
+    <ClCompile Include="Wndtools\CloseBtn.cpp" />
+    <ClCompile Include="Wndtools\WaterMarkWnd.cpp" />
+    <ClCompile Include="Word\docx.cpp" />
+    <ClCompile Include="Word\WordReport.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="Appraiser\AddAppraiserDialog.ui" />
+    <QtUic Include="Appraiser\AppraiserDialog.ui" />
+    <QtUic Include="Appraiser\AppraisalStandardDialog.ui" />
+    <QtUic Include="Appraiser\AppraiserTable.ui" />
+    <QtUic Include="Appraiser\PhotoDialog.ui" />
+    <QtUic Include="Appraiser\AppraisalStandardTable.ui" />
+    <QtUic Include="CameraCalibration\CameraCalibration.ui" />
+    <QtUic Include="CameraCalibration\Dedistortion.ui" />
+    <QtUic Include="ImageEnhance\ImageEnhance.ui" />
+    <QtUic Include="Magnifier\Zoom.ui" />
+    <QtUic Include="Magnifier\Magnifier.ui" />
+    <QtUic Include="Player\PlayerWidget.ui" />
+    <QtUic Include="PointsWidget\InputWidget.ui" />
+    <QtUic Include="PointsWidget\PointItem.ui" />
+    <QtUic Include="PointsWidget\InputDialog.ui" />
+    <QtUic Include="main\vtmr.ui" />
+    <QtUic Include="ProjectWizard\DateTimeDialog.ui" />
+    <QtUic Include="ProjectWizard\MeasuringMethodWnd.ui" />
+    <QtUic Include="Register\Register.ui" />
+    <QtUic Include="Ruler\RulerWidget.ui" />
+    <QtUic Include="StartUp\StartUpDialog.ui">
+      <FileType>Document</FileType>
+    </QtUic>
+    <QtUic Include="Taken\TakenBG.ui" />
+    <QtUic Include="Taken\CustomScrollArea.ui" />
+    <QtUic Include="Player\PlayerBG.ui" />
+    <QtUic Include="Taken\TakenControl.ui" />
+    <QtUic Include="TimeInfo\TimeInfoWnd.ui" />
+    <QtUic Include="Trace\ShowTrace.ui" />
+    <QtUic Include="Trace\TraceWidget.ui" />
+    <QtUic Include="Utils\TipsDialog.ui" />
+    <QtUic Include="Wndtools\CloseBtn.ui" />
+    <QtUic Include="Wndtools\WaterMarkWnd.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="vtmr.qrc">
+      <FileType>Document</FileType>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Trace\TraceWidget.h" />
+    <QtMoc Include="Utils\Log.h" />
+    <QtMoc Include="Appraiser\AddAppraiserDialog.h" />
+    <QtMoc Include="Appraiser\AppraiserDialog.h" />
+    <QtMoc Include="Appraiser\AppraiserTable.h" />
+    <QtMoc Include="Appraiser\PhotoDialog.h" />
+    <QtMoc Include="ProjectWizard\ProjectInfoPage.h" />
+    <QtMoc Include="ProjectWizard\MeasuringMethodPage.h" />
+    <QtMoc Include="ProjectWizard\AccidentPage.h" />
+    <QtMoc Include="ProjectWizard\EntrustPage.h" />
+    <QtMoc Include="ProjectWizard\AppraisalPage.h" />
+    <QtMoc Include="DataBase\SQLManager.h" />
+    <QtMoc Include="Player\DecodeThread.h" />
+    <QtMoc Include="OCRManage\OCRThread.h" />
+    <QtMoc Include="Utils\TipsDialog.h" />
+    <QtMoc Include="Player\PlayerWidget.h" />
+    <QtMoc Include="TimeInfo\TimeInfoWnd.h" />
+    <QtMoc Include="ProjectWizard\MeasuringMethodWnd.h" />
+    <QtMoc Include="Wndtools\WaterMarkWnd.h" />
+    <QtMoc Include="Wndtools\CloseBtn.h" />
+    <QtMoc Include="Word\docx.h" />
+    <QtMoc Include="Word\WordReport.h" />
+    <QtMoc Include="Player\PlayerSlider.h" />
+    <QtMoc Include="Player\PlayerBG.h" />
+    <QtMoc Include="Taken\CustomScrollArea.h" />
+    <QtMoc Include="PointsWidget\InputDialog.h" />
+    <QtMoc Include="ProjectWizard\DateTimeDialog.h" />
+    <QtMoc Include="ProjectWizard\ProjectWizard.h" />
+    <QtMoc Include="PointsManage\PointsManage.h" />
+    <QtMoc Include="PointsManage\FixedCam1D.h" />
+    <QtMoc Include="PointsManage\FixedCam2D.h" />
+    <QtMoc Include="PointsManage\MovingCamSpace.h" />
+    <QtMoc Include="PointsManage\MovingCam2DOneself.h" />
+    <QtMoc Include="PointsManage\MovingCam2DTargetVehicle.h" />
+    <QtMoc Include="StartUp\ringsmapprogressbar.h" />
+    <QtMoc Include="StartUp\StartUpDialog.h" />
+    <QtMoc Include="ProjectCatalog\ProjectList.h" />
+    <QtMoc Include="ProjectCatalog\ProjectItem.h" />
+    <QtMoc Include="PointsWidget\Length4Points.h" />
+    <QtMoc Include="PointsWidget\Length2Coordinate.h" />
+    <QtMoc Include="PointsWidget\Length2Points.h" />
+    <QtMoc Include="PointsWidget\Length3Points.h" />
+    <QtMoc Include="PointsWidget\Coordinate2Points.h" />
+    <QtMoc Include="PointsWidget\Coordinate3Points.h" />
+    <QtMoc Include="PointsWidget\Coordinate4Points.h" />
+    <QtMoc Include="CameraCalibration\CameraCalibration.h" />
+    <QtMoc Include="Appraiser\AppraisalStandardTable.h" />
+    <QtMoc Include="Appraiser\AppraisalStandardDialog.h" />
+    <ClInclude Include="DataBase\SerializeData.h" />
+    <QtMoc Include="CameraCalibration\Dedistortion.h" />
+    <QtMoc Include="Trace\ShowTrace.h" />
+    <QtMoc Include="ImageEnhance\ImageEnhance.h" />
+    <ClInclude Include="KeyTrack\KeyTrack.h" />
+    <QtMoc Include="Magnifier\Magnifier.h" />
+    <QtMoc Include="Ruler\Ruler.h" />
+    <QtMoc Include="Ruler\RulerWidget.h" />
+    <QtMoc Include="Taken\TakenBG.h" />
+    <QtMoc Include="Taken\TakenControl.h" />
+    <QtMoc Include="PointsManage\FixedCamReference.h" />
+    <QtMoc Include="PointsManage\TwoPoints.h" />
+    <QtMoc Include="Magnifier\Zoom.h" />
+    <QtMoc Include="Register\Register.h" />
+    <ClInclude Include="resource1.h" />
+    <QtMoc Include="Taken\LogBrowser.h" />
+    <QtMoc Include="TimeInfo\P0Trace.h" />
+    <ClInclude Include="Utils\Command.h" />
+    <ClInclude Include="Utils\Global.h" />
+    <ClInclude Include="Utils\ReadIni.h" />
+    <ClInclude Include="Utils\Utils.h" />
+    <QtMoc Include="PointsWidget\InputWidget.h" />
+    <QtMoc Include="PointsWidget\PointItem.h" />
+    <QtMoc Include="main\vtmr.h" />
+    <ClInclude Include="Player\DecodeVideo.h" />
+    <QtMoc Include="Taken\TakenWidget.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VTMR.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\VTMR\vtmr.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

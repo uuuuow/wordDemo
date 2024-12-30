@@ -1,0 +1,629 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main\vtmr.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="main\main.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Utils.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Global.cpp">
+      <Filter>Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="Taken\CustomScrollArea.cpp">
+      <Filter>Taken</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectWizard\DateTimeDialog.cpp">
+      <Filter>ProjectWizard</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectWizard\ProjectWizard.cpp">
+      <Filter>ProjectWizard</Filter>
+    </ClCompile>
+    <ClCompile Include="StartUp\ringsmapprogressbar.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectCatalog\ProjectList.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectCatalog\ProjectItem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsWidget\Length4Points.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsWidget\Length2Coordinate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsWidget\Length2Points.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsWidget\Length3Points.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsWidget\Coordinate2Points.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsWidget\Coordinate3Points.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsWidget\Coordinate4Points.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\SerializeData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraCalibration\Dedistortion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraCalibration\CameraCalibration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trace\ShowTrace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsManage\PointsManage.cpp">
+      <Filter>PointsManage</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsWidget\PointItem.cpp">
+      <Filter>InputPoints</Filter>
+    </ClCompile>
+    <ClCompile Include="ImageEnhance\ImageEnhance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Magnifier\Magnifier.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\DecodeVideo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerSlider.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ruler\Ruler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Ruler\RulerWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Taken\TakenControl.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerBG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Taken\TakenBG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyTrack\KeyTrack.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsWidget\InputWidget.cpp">
+      <Filter>InputPoints</Filter>
+    </ClCompile>
+    <ClCompile Include="Taken\TakenWidget.cpp">
+      <Filter>Taken</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsManage\FixedCam1D.cpp">
+      <Filter>PointsManage</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsManage\FixedCam2D.cpp">
+      <Filter>PointsManage</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsManage\MovingCam2DOneself.cpp">
+      <Filter>PointsManage</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsManage\MovingCam2DTargetVehicle.cpp">
+      <Filter>PointsManage</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsManage\MovingCamSpace.cpp">
+      <Filter>PointsManage</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsManage\FixedCamReference.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsManage\TwoPoints.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Word\WordReport.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Trace\TraceWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Appraiser\AddAppraiserDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Appraiser\AppraiserDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Appraiser\AppraiserTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Appraiser\PhotoDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectWizard\ProjectInfoPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectWizard\EntrustPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectWizard\AppraisalPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectWizard\MeasuringMethodPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectWizard\AccidentPage.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataBase\SQLManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\DecodeThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OCRManage\OCRThread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PointsWidget\InputDialog.cpp">
+      <Filter>InputPoints</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\TipsDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Player\PlayerWidget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeInfo\TimeInfoWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Word\docx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ProjectWizard\MeasuringMethodWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wndtools\WaterMarkWnd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wndtools\CloseBtn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Magnifier\Zoom.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="StartUp\StartUpDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Register\Register.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Appraiser\AppraisalStandardTable.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Appraiser\AppraisalStandardDialog.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Taken\LogBrowser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeInfo\P0Trace.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\Command.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Utils\ReadIni.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main\TestWord.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Utils.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Global.h">
+      <Filter>Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="DataBase\SerializeData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Player\DecodeVideo.h">
+      <Filter>Taken</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyTrack\KeyTrack.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="resource1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\Command.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Utils\ReadIni.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="main\vtmr.h">
+      <Filter>main</Filter>
+    </QtMoc>
+    <QtMoc Include="Taken\CustomScrollArea.h">
+      <Filter>Taken</Filter>
+    </QtMoc>
+    <QtMoc Include="ProjectWizard\ProjectWizard.h">
+      <Filter>ProjectWizard</Filter>
+    </QtMoc>
+    <QtMoc Include="ProjectWizard\DateTimeDialog.h">
+      <Filter>ProjectWizard</Filter>
+    </QtMoc>
+    <QtMoc Include="StartUp\ringsmapprogressbar.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="StartUp\StartUpDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ProjectCatalog\ProjectList.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ProjectCatalog\ProjectItem.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsWidget\Length4Points.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsWidget\Length2Coordinate.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsWidget\Length2Points.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsWidget\Length3Points.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsWidget\Coordinate2Points.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsWidget\Coordinate3Points.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsWidget\Coordinate4Points.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CameraCalibration\Dedistortion.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CameraCalibration\CameraCalibration.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Trace\ShowTrace.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsManage\PointsManage.h">
+      <Filter>PointsManage</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsWidget\PointItem.h">
+      <Filter>InputPoints</Filter>
+    </QtMoc>
+    <QtMoc Include="ImageEnhance\ImageEnhance.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Magnifier\Magnifier.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Player\PlayerSlider.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Ruler\Ruler.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Ruler\RulerWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Taken\TakenControl.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Player\PlayerBG.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Taken\TakenBG.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsWidget\InputWidget.h">
+      <Filter>InputPoints</Filter>
+    </QtMoc>
+    <QtMoc Include="Taken\TakenWidget.h">
+      <Filter>Taken</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsManage\FixedCam1D.h">
+      <Filter>PointsManage</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsManage\FixedCam2D.h">
+      <Filter>PointsManage</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsManage\MovingCam2DOneself.h">
+      <Filter>PointsManage</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsManage\MovingCam2DTargetVehicle.h">
+      <Filter>PointsManage</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsManage\MovingCamSpace.h">
+      <Filter>PointsManage</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsManage\FixedCamReference.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsManage\TwoPoints.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Word\WordReport.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Trace\TraceWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Utils\Log.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Appraiser\AddAppraiserDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Appraiser\AppraiserDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Appraiser\AppraiserTable.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Appraiser\PhotoDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ProjectWizard\ProjectInfoPage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ProjectWizard\EntrustPage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ProjectWizard\AppraisalPage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ProjectWizard\MeasuringMethodPage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ProjectWizard\AccidentPage.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="DataBase\SQLManager.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Player\DecodeThread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="OCRManage\OCRThread.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PointsWidget\InputDialog.h">
+      <Filter>InputPoints</Filter>
+    </QtMoc>
+    <QtMoc Include="Utils\TipsDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Player\PlayerWidget.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="TimeInfo\TimeInfoWnd.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ProjectWizard\MeasuringMethodWnd.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Wndtools\WaterMarkWnd.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Wndtools\CloseBtn.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Magnifier\Zoom.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Word\docx.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Register\Register.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Appraiser\AppraisalStandardTable.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Appraiser\AppraisalStandardDialog.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Taken\LogBrowser.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="TimeInfo\P0Trace.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="vtmr.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="main\vtmr.ui">
+      <Filter>main</Filter>
+    </QtUic>
+    <QtUic Include="Taken\CustomScrollArea.ui">
+      <Filter>Taken</Filter>
+    </QtUic>
+    <QtUic Include="ProjectWizard\DateTimeDialog.ui">
+      <Filter>ProjectWizard</Filter>
+    </QtUic>
+    <QtUic Include="StartUp\StartUpDialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CameraCalibration\Dedistortion.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CameraCalibration\CameraCalibration.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="PointsWidget\PointItem.ui">
+      <Filter>InputPoints</Filter>
+    </QtUic>
+    <QtUic Include="ImageEnhance\ImageEnhance.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Magnifier\Magnifier.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Ruler\RulerWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Taken\TakenControl.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Player\PlayerBG.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Trace\ShowTrace.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Taken\TakenBG.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="PointsWidget\InputWidget.ui">
+      <Filter>InputPoints</Filter>
+    </QtUic>
+    <QtUic Include="Trace\TraceWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Appraiser\AddAppraiserDialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Appraiser\AppraiserDialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Appraiser\AppraiserTable.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Appraiser\PhotoDialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="PointsWidget\InputDialog.ui">
+      <Filter>InputPoints</Filter>
+    </QtUic>
+    <QtUic Include="Utils\TipsDialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Player\PlayerWidget.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="TimeInfo\TimeInfoWnd.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ProjectWizard\MeasuringMethodWnd.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Wndtools\WaterMarkWnd.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Wndtools\CloseBtn.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Magnifier\Zoom.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Register\Register.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Appraiser\AppraisalStandardTable.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Appraiser\AppraisalStandardDialog.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="InputPoints">
+      <UniqueIdentifier>{d95d2a82-9e54-4646-8b44-c1011f645fba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{a17da451-c280-4160-8bd8-b59cd4a3a5dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="MarkerPoint">
+      <UniqueIdentifier>{8c24b106-f686-4ab0-ba54-7ca286698b02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="player">
+      <UniqueIdentifier>{396f4acb-7487-4b2b-8c09-e893abc7e5b1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="player\config">
+      <UniqueIdentifier>{93860890-2b6e-4fa2-8ccb-9d85cc325853}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="player\filters">
+      <UniqueIdentifier>{08b4a50f-88d4-4d25-bbd8-7b7456dc788d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="player\playlist">
+      <UniqueIdentifier>{6e3323d2-f167-4f88-9ed1-51fd054394b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Taken">
+      <UniqueIdentifier>{ba7d062c-37e2-410b-b4fd-20472aa63725}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utils">
+      <UniqueIdentifier>{8576fa92-ccdc-487f-8a6f-3c7e0274f90a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="ProjectWizard">
+      <UniqueIdentifier>{aa5e11e4-7b65-4b2e-a708-211b1ae10b70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ProjectCatalog">
+      <UniqueIdentifier>{92443404-c3f9-4b5c-9f45-656994ce89d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataBase">
+      <UniqueIdentifier>{469c171a-3f9f-4f04-a2e4-000f3ef7e664}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Trace">
+      <UniqueIdentifier>{e113a71b-5f48-4859-921d-55a2c07fd032}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="PointsManage">
+      <UniqueIdentifier>{1e99f360-c657-4fdc-ab0b-5b5e8a41d18a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="VTMR.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="images\VTMR\vtmr.ico" />
+  </ItemGroup>
+</Project>
